@@ -15,6 +15,8 @@
 		8F49897227CE1F6800432C6B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F49897127CE1F6800432C6B /* Message.swift */; };
 		8F49897627CE22D800432C6B /* MassageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F49897527CE22D800432C6B /* MassageBubble.swift */; };
 		8F49897827CE3C1100432C6B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F49897727CE3C1000432C6B /* Extensions.swift */; };
+		8F87739C27D0ACE30095371E /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F87739B27D0ACE30095371E /* MessageField.swift */; };
+		8F87739E27D0B5DB0095371E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F87739D27D0B5DB0095371E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		8F49897127CE1F6800432C6B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		8F49897527CE22D800432C6B /* MassageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageBubble.swift; sourceTree = "<group>"; };
 		8F49897727CE3C1000432C6B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8F87739B27D0ACE30095371E /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
+		8F87739D27D0B5DB0095371E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +65,12 @@
 			children = (
 				8F49895E27CDF1AB00432C6B /* SwiftUI_Chat_AppApp.swift */,
 				8F49896027CDF1AB00432C6B /* ContentView.swift */,
+				8F87739D27D0B5DB0095371E /* GoogleService-Info.plist */,
+				8F49897727CE3C1000432C6B /* Extensions.swift */,
 				8F49897027CE1F2700432C6B /* Models */,
 				8F49896C27CDF53900432C6B /* Component */,
 				8F49896227CDF1AC00432C6B /* Assets.xcassets */,
 				8F49896427CDF1AC00432C6B /* Preview Content */,
-				8F49897727CE3C1000432C6B /* Extensions.swift */,
 			);
 			path = SwiftUI_Chat_App;
 			sourceTree = "<group>";
@@ -83,6 +88,7 @@
 			children = (
 				8F49896D27CDF59800432C6B /* TitleRow.swift */,
 				8F49897527CE22D800432C6B /* MassageBubble.swift */,
+				8F87739B27D0ACE30095371E /* MessageField.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -155,6 +161,7 @@
 			files = (
 				8F49896627CDF1AC00432C6B /* Preview Assets.xcassets in Resources */,
 				8F49896327CDF1AC00432C6B /* Assets.xcassets in Resources */,
+				8F87739E27D0B5DB0095371E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +175,7 @@
 				8F49897627CE22D800432C6B /* MassageBubble.swift in Sources */,
 				8F49897827CE3C1100432C6B /* Extensions.swift in Sources */,
 				8F49896127CDF1AB00432C6B /* ContentView.swift in Sources */,
+				8F87739C27D0ACE30095371E /* MessageField.swift in Sources */,
 				8F49897227CE1F6800432C6B /* Message.swift in Sources */,
 				8F49895F27CDF1AB00432C6B /* SwiftUI_Chat_AppApp.swift in Sources */,
 				8F49896E27CDF59800432C6B /* TitleRow.swift in Sources */,
