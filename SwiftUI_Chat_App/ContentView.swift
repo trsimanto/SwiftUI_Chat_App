@@ -8,25 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var messagesManager = MassagesManager()
     
-    
-    
-    var messageArray = ["Hello you","How are you doing?","I've been buliding SwiftUI applications from scratch and it's so much fun!"]
     var body: some View {
         VStack {
             VStack {
                  TitleRow()
-                ScrollView{
-                    ForEach(messageArray, id: \.self ){ text in
-                        MassageBubble(message: Message(id: "12345", text: text, received: true, timestamp: Date()))
+                ScrollViewReader { proxi in
+                    ScrollView{
+                        ForEach(messagesManager.messages, id: \.id ){ message in
+                            MassageBubble(message: message )
 
-                    }
-                }.padding(.top , 10)
-                .background(.white)
+                        }
+                    }.padding(.top , 10)
+                        .background(.white)
+                        .cornerRedius(30,corners: [.topLeft , .topRight])
+                        .onChange(of: messagesManager.lastMessageId){ id in
+                            withAnimation{
+                                proxi.scrollTo(id, anchor: .bottom)
+                            }
+                        }
+                }
                     
             }.frame(maxWidth: .infinity)
                 .background(Color("Peach"))
             MessageField()
+                .environmentObject(messagesManager)
         }
        
     }

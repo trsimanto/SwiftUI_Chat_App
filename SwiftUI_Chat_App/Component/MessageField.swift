@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct MessageField: View {
+    @EnvironmentObject var messageManager : MassagesManager
+    
     @State private var message = ""
+    
     
     var body: some View {
         HStack{
             CustomTextField(placeholder: Text("Enter your message here"), text: $message )
-            
             //closer petttern
             Button{
+                messageManager.sendMessage(text: message)
                 print("message sent")
                 message = ""
             } label: {
@@ -37,6 +40,7 @@ struct MessageField: View {
 struct MessageField_Previews: PreviewProvider {
     static var previews: some View {
         MessageField()
+            .environmentObject(MassagesManager())
     }
 }
 
