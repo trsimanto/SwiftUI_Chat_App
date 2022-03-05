@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    
+    
     var messageArray = ["Hello you","How are you doing?","I've been buliding SwiftUI applications from scratch and it's so much fun!"]
     var body: some View {
         VStack {
